@@ -1,3 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;700');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: none;
+  outline: none;
+  color: #FFF;
+  font-family: Inter;
+}
+
+p {
+  @apply text-lg
+}
+
+html,
+body {
+  background: #121218;
+}
+
+h1 {
+  @apply text-5xl;
+  font-weight: bold;
+}
+
+h2,
+h3 {
+  @apply text-2xl;
+  font-weight: bold;
+}
+
+p {
+  font-weight: 100;
+}
+
+ul {
+  margin-left: 2em;
+}
+
+li::before {
+  content: "-> ";
+}
+
+a {
+  @apply text-blue-400 hover:underline;
+}
