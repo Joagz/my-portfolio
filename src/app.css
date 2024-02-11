@@ -33,16 +33,26 @@ h3 {
   font-weight: bold;
 }
 
+h4,
+h5 {
+  @apply text-xl;
+}
+
 p {
-  font-weight: 100;
+  @apply text-sm;
+  font-weight: 400;
 }
 
 ul {
+  display: flex;
+  flex-direction: column;
+  gap: .5em;
   margin-left: 2em;
 }
 
 li::before {
-  content: "-> ";
+  content: "--> ";
+  @apply text-blue-300;
 }
 
 a {
